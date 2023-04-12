@@ -11,8 +11,10 @@ import javax.servlet.http.HttpServletResponse;
 import com.shopNest.dbHandler.DataInjector;
 
 @WebServlet("/addP")
-public class ProductServlet  extends HttpServlet{
-	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+public class ProductServlet  extends HttpServlet
+{
+	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException 
+	{
 		int pid=Integer.parseInt(req.getParameter("product-id"));
 		String pname=req.getParameter("product-name");
 		String pdesc=req.getParameter("product-description");
