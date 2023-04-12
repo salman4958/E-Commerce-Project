@@ -11,7 +11,8 @@ import com.shopNest.dbHandler.DataInjector;
 
 @WebServlet("/reg")
 public class RegisterServlet extends HttpServlet{
-		public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+		public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException 
+		{
 				String uname=req.getParameter("uname");
 				String mail=req.getParameter("mail");
 				String pass=req.getParameter("pass");
